@@ -1,0 +1,38 @@
+$ct_caractsdata : '.ct_caractsdata';
+
+#{$ct_caractsdata}{
+	padding-top: 1.4rem;
+	display: none;
+	&__item {
+		display: flex;
+		align-items: center;
+		.item-cars {
+			padding: .2rem 1rem;
+			text-align: center;
+			width: 35%;
+			.icon {
+				width: 24px;
+				height: 24px;
+			}
+			small {
+				display: block;
+				font-size: .7rem;
+			}
+		}
+		.item-text {
+			font-size: .9rem;
+			padding: .5rem 1rem;
+			width: 60%;
+
+		}
+		&:nth-child(odd) {
+			background: #c6e2f6;
+		}
+		&.c-adicional {
+			background-color: $yellow-ct;
+			color: $purphe-link;
+			padding: 1rem;
+			margin: 1rem 0;
+		}
+	}
+}

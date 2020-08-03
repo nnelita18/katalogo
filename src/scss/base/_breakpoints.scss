@@ -1,0 +1,439 @@
+@media (min-width: 1400px) {
+	// Nav Menu
+	.ct_navbarmenu__nemulist .nav-item .nav-link {
+		font-size: 1.24rem;
+	}
+
+	.nav-busqueda__offer p {
+		font-size: .8485rem;
+	}
+
+	// Promociones
+	.ct_promociones__categorias .promo-categorias__opc {
+		font-size: 1.22rem !important;
+	}
+
+	.ct_tipos-pago__box .pagosbox__title {
+		font-size: 18px;
+	}
+
+	.ct_tipos-pago__box .pagosbox__description {
+		font-size: 18px;
+	}
+
+	.container-filters__item {
+		padding: 1rem .75rem 1rem 3.125rem;
+	}
+	
+	.element__marca, .element__modelo {
+		font-size: 1.2rem;
+	}
+	.element__modelo {
+		margin-bottom: .1rem;
+	}
+	.element__prepublico {
+		font-size: 1.2rem;
+	}
+
+	// Footer
+	.footer__descripcion p {
+		font-size: 1.12rem;
+	}
+
+	.bg--lightblue p {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 1300px) {
+	.nav-busqueda .ct_search__btn {
+		font-size: 20px;
+	}
+	// Nav Menu
+	.ct_navbarmenu__nemulist .nav-item .nav-link {
+		font-size: .92rem;
+	}
+
+	.nav-busqueda__offer p {
+		font-size: .8485rem;
+	}
+	
+	.ct_navbarmenu__nemulist .nav-item .icon-menu,
+	.ct_navbarmenu__nemulist .nav-item .icon-dfl {
+		width: 25px;
+		height: 25px;
+	}
+	// Promociones
+	.ct_promociones__categorias .promo-categorias__opc {
+		font-size: 1.1rem !important;
+	}
+
+	.ct_tipos-pago__box .pagosbox__title {
+		font-size: 18px;
+	}
+
+	.ct_tipos-pago__box .pagosbox__description {
+		font-size: 18px;
+	}
+
+	.container-filters__item {
+		padding: .82rem .75rem .82rem 3.125rem;
+	}
+	
+	.element__marca, .element__modelo {
+		font-size: 1.1rem;
+	}
+
+	.element__predis {
+		font-size: .86rem;
+	}
+
+	.element__modelo {
+		margin-bottom: .1rem;
+	}
+	.element__prepublico {
+		font-size: 1.2rem;
+	}
+
+	// Footer
+	.footer__descripcion p {
+		font-size: 1.12rem;
+	}
+
+	.bg--lightblue p {
+		font-size: 1rem;
+	}
+}
+
+
+// Max responsive
+@media (max-width: 767.98px) {
+	.nav-busqueda {
+		padding-top: .5rem;
+	}
+	.nav-busqueda .col-lg-3 {
+		text-align: center;
+		padding-bottom: .5rem;
+	}
+	.ct_logo {
+		width: 250px;
+	}
+
+	.ct_promociones__slider {
+		padding: 0;
+	}
+	.ct_promociones__categorias {
+		flex-direction: column !important;
+	}
+	.ct_ofertas .ct_ofertas__item {
+		padding-top: 8px;
+	}
+
+	.ct_promociones__categorias .promo-categorias {
+		width: 100% !important;
+	}
+
+	.ct_promociones__categorias .promo-categorias__opc {
+		width: 100% !important;
+	}
+
+	.footer__pre .col-lg-3{
+		text-align: center;
+	}
+
+	.footer__descripcion p {
+		font-size: .8rem;
+		text-align: center;
+		margin-top: .5rem;
+	}
+
+	.bg--lightblue p {
+		font-size: .8rem;
+	}
+	.ct_card.selected {
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.nav-busqueda__offer p{
+		text-align: center;
+		margin: 0 auto;
+	}
+	.nav-busqueda {
+		padding-bottom: .5rem;
+	}
+	.ct_navbarmenu__nemulist .nav-item {
+		width: 100%;
+	}
+
+	.ct_bg--blue {
+		padding: 0;
+	}
+
+	.ct_navbarmenu__nemulist .nav-item {
+		width: 100%;
+	}
+	.ct_navbarmenu__nemulist .nav-item .nav-link {
+		text-align: left;
+		padding: .9rem 1rem !important;
+	}
+
+	// Promociones
+	.ct_promociones__categorias {
+		flex-direction: row;
+		padding-right: 15px !important;
+	}
+
+	.ct_promociones__categorias .promo-categorias__opc {
+		padding: .5rem .75rem .5rem 1rem !important;
+		width: 50%;
+	}
+
+	.ct_promociones__categorias .promo-categorias {
+		flex: 1;
+	    width: 50%;
+	    flex-wrap: wrap;
+	    flex-direction: row;
+	}
+	.ct_promociones__litem {
+		padding-top: 0;
+		flex: .5;
+	}
+
+	.ct_carousel__indicators {
+		justify-content: center;
+	}
+
+	// Tipos de pago
+	.ct_tipos-pago {
+		background: none;
+	}
+	.ct_tipos-pago__box {
+		background-image: url('../img/home/bg-pagos.jpg');
+		background-repeat: repeat-x;
+		background-position: top center;
+		background-size: contain;
+	}
+
+	.ct_tipos-pago__box .pagosbox {
+		padding: 20px 10px 10px !important;
+	}
+
+	.ct_tipos-pago__box .pagosbox:before {
+		height: 0 !important;
+	}
+
+	// Ofertas
+	.contr-offs {
+		justify-content: center;
+	}
+
+	// Pagina catalogo
+	.ct_sidebar .lmarcas {
+		height: auto;
+	}
+	.ct_sidebar .lmarcas .nav-item {
+		width: auto !important;
+	}
+
+	//Comparador 
+	.equipocomp__img .img-dfl {
+		width: 250px;
+	}
+	.ct_comparador .row .col-md-6 {
+		margin-top: 2rem;
+	}
+	.ct_card {
+		margin-top: 0;
+	}
+}
+
+
+@media (max-width: 1199.98px) {
+	// Nav Menu
+	.nav-busqueda .ct_search__btn {
+		font-size: 14px;
+		height: 100%;
+	}
+
+	.ct_navbarmenu__nemulist .nav-item .nav-link {
+		font-size: .86rem;
+		padding: 12px 5px;
+		height: 100%;
+		vertical-align: middle;
+	}
+
+	.ct_navbarmenu__nemulist .nav-item .icon-menu,
+	.ct_navbarmenu__nemulist .nav-item .icon-dfl {
+		width: 23px;
+		height: 23px;
+	}
+
+	.nav-busqueda__offer p {
+		text-align: center;
+	}
+
+	// Promociones
+	.ct_promociones {
+		margin-bottom: 30px;    
+	}
+
+	.ct_promociones__categorias .promo-categorias__opc {
+		font-size: .86rem;
+		padding: 0 .75rem 0 1rem;		
+	}
+
+	.ct_carousel__indicators  {
+		bottom: -49px;
+	}
+
+	.ct_carousel__indicators li {
+		width: 15px;
+		height: 15px;
+	}
+
+	// Tipos pago
+	.ct_tipos-pago__box .pagosbox {
+		padding: 25px 10px 17px;
+	}
+
+	.ct_tipos-pago__box .pagosbox:before {
+		height: 37px;
+	}
+
+	.ct_tipos-pago__box .pagosbox__title {
+		font-size: 16px;
+	}
+
+	.ct_tipos-pago__box .pagosbox__description {
+		font-size: 15px;
+	}
+
+	// Filtros Equipos
+	.container-filters__item:first-child {
+		    font-size: .9rem;
+	}
+
+	.container-filters__item {
+		font-size: 1rem;
+    	padding: .5rem .75rem .5rem 3.125rem;
+	}
+	
+	.element__marca, .element__modelo {
+		font-size: 1rem;
+	}
+
+	.element__modelo {
+		margin-bottom: .1rem;
+	}
+
+	.element__predis {
+		font-size: .8rem;
+	}
+
+	.element__prepublico {
+		font-size: 1rem;
+	}
+
+	// Single producto
+	.label-offer {
+		top: 3.5%;
+		right: -11%;
+		width: 80%;
+	}
+
+	//Comparador
+	
+
+	// Footer
+	.footer__descripcion p {
+		font-size: .86rem;
+	}
+
+	.bg--lightblue p {
+		font-size: .85rem;
+	}	
+
+	.footer__pre {
+		padding: 1.063rem 0;
+	}
+
+	.bg--lightblue {
+		padding: 1.063rem 0;
+	}
+ 
+}
+
+@media (max-width: 1299.98px) {
+	.ct_navbarmenu__nemulist .nav-item .nav-link {
+		font-size: 1rem;
+	}
+	.ct_promociones__categorias .promo-categorias__opc {
+		font-size: .924rem;
+	}
+	.ct_tipos-pago__box .pagosbox {
+		padding: 40px 10px 25px;
+	}
+	.ct_tipos-pago__box .pagosbox__title {
+		font-size: 1.313rem;
+	}
+
+	.ct_tipos-pago__box .pagosbox__description {
+		font-size: 1.25rem;
+	}
+	.container-filters__item {
+		padding: .6rem .75rem .6rem 3.125rem;
+	}
+	.element__marca, .element__modelo {
+		font-size: 1.1rem;
+	}
+	.element__predis {
+		font-size: .8rem;
+	}
+	.element__prepublico {
+		font-size: 1.3rem;
+	}
+
+	// catalogo
+	.ct_sidebar .lmarcas .nav-item {
+		width: 100%;
+	}
+	#brandfilter .nav-item .form-check .form-check-label {
+		font-size: .88rem;
+	}
+
+	.footer__descripcion p {
+		font-size: 1rem;
+	}
+	.bg--lightblue p {
+		font-size: .9rem;
+	}
+
+	// Single producto
+	.label-offer {
+		top: 3.5%;
+		right: -11%;
+		width: 80%;
+	}
+	//Comparador
+	.equipocomp__img .img-dfl {
+		width: 250px;
+	}
+
+	.equipocomp__img .cargadorimg {
+		width: 140px;
+		height: auto;
+	}
+	.equipocomp__img {
+		height: 250px;
+	}
+}
+
+@media (max-width: 1699.98px) {
+	// Single producto
+	.label-offer {
+		top: 6%;
+		right: -14%;
+	}
+}

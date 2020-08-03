@@ -1,0 +1,77 @@
+$modal-destacados : '.modal-destacados';
+
+#{$modal-destacados}{
+	.modal-body {
+		padding: 0;
+	}
+	.carousel-indicators {
+		width: 41%;
+		margin: 0;
+		li {
+			background-color: $purphe-link;
+			border-radius: 50%;
+			width: 15px;
+			height: 15px;
+		}
+	}
+	&__content {
+		.close {
+			position: absolute;
+			right: .8rem;
+			top: .5rem;
+			z-index: 9;
+			outline: none;
+			color: #892784;
+		}
+	}
+}
+
+
+$ct_modalpromos : '.ct_modalpromos'; 
+
+#{$ct_modalpromos}{
+	&__info {
+		padding: 2rem 3rem;
+		.info-title {
+			color: $primary-ct;
+			text-align: center;
+			// background: #fbca03;
+			padding: .5rem;
+			position: relative;
+			margin-bottom: 1rem;
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 10%;
+				right: 0;
+				margin: 0 auto;
+				height: 5px;
+				background: $primary-ct;
+			}
+		}
+		.info-subtitle {
+			color: $purphe-link;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		&:before {
+
+		}
+	}
+	&__product {
+		border-radius: .3rem;
+		background: {
+			image: url('../img/home/popups/promo-destas/yellow-bg.jpg');
+			position: center;
+			repeat: no-repeat;
+			size: cover;
+		}
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+	}
+}

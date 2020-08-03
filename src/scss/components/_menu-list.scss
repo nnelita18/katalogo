@@ -1,0 +1,30 @@
+$branlist : '.branlist';
+
+#{$branlist}{
+	width: 100%;
+	&.shower {
+		display: block;
+	}
+	.multi-column-dropdown {
+		list-style: none;
+		padding: 0;
+		li {
+			border-bottom: 1px solid #892784;
+		}
+		.mlink {
+			color: #1f346f;
+			font-size: .9rem;
+			font-weight: 400;
+			display: block;
+			padding: .5rem 1rem;
+			height: auto;
+			text-transform: uppercase;
+			&.active,
+			&:hover {
+				background: #892784;
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+	}
+}

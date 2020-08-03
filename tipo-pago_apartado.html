@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <title>Catálogo Productos - Microtec</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap-slider.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    
+    <link rel="stylesheet" href="assets/css/styles.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+  </head>
+
+  <body>
+    <div class="degraded-bar"></div>
+    <section class="nav-busqueda">        
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <a href=""><img src="assets/img/logos/microtec.png" class="ct_logo img-fluid"></a>
+          </div>
+          <div class="col-lg-6 ct_search col-md-8">
+            <div class="input-group ct_search__container">
+                <div class="input-group-btn search-panel" data-search="students">
+                    <button type="button" class="btn btn-default dropdown-toggle search-panel__filter" data-toggle="dropdown">
+                      <span class="search_by">Filtrar por:</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a data-search="students">Marca</a></li>
+                      <div class="divider"></div>
+                      <li><a data-search="teachers">Modelo</a></li>
+                    </ul>
+                </div>   
+                <input type="text" class="form-control ct_search__input" name="x" placeholder="Etiqueta de búsqueda">
+                <span class="input-group-btn">
+                    <button class="btn btn-default ct_search__btn" type="button">BUSCAR</button>
+                </span>
+            </div> 
+          </div>  
+          <div class="col-lg-3 nav-busqueda__offer col-md-12">
+            <p>¡EN MICROTEC SIEMPRE ESTRENAS FÁCIL Y RÁPIDO!</p>
+          </div>
+        </div>
+      </div>      
+    </section>
+
+    <nav class="navbar ct_navbarmenu navbar-expand-lg navbar-dark ct_bg--blue">
+        <!-- <a class="navbar-brand" href="#">Expand at lg</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentLG" aria-controls="navbarSupportedContentLG" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContentLG">
+            <ul class="navbar-nav mr-auto ct_navbarmenu__nemulist">
+                <li class="nav-item">
+                    <a class="nav-link" href="/pagina/ktalogo/">
+                        <i class="fas fa-home mr-2 ico-menu"></i>INICIO
+                    </a>
+                </li>
+                <li class="nav-item amarcas">
+                    <a class="nav-link hovmarcas" href="catalogo.php"><i class="fas fa-mobile-alt ico-menu mr-3"></i> MARCAS EQUIPOS</a>
+                    <ul class="dropdown-menu multi-column columns-3 branlist"><div id="lista-marcas" class="row"></div></ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link alink" href="cat-promociones.php">
+                        <img src="assets/img/icons/promos.png" alt="" class="icon-menu">PROMOCIONES DEL MES
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link alink" href="cat-novedades.php">
+                        <img src="assets/img/icons/star.svg" alt="" class="icon-menu">
+                        DESTACADOS & NOVEDADES
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link alink" href="cat-liquidacion.php">
+                        <img src="assets/img/icons/liquid.png" alt="" class="icon-dfl">
+                        EQUIPOS EN LIQUIDACIÓN
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="content-replace">
+        <section class="ct_paytype banner-type type-bg--blue">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-5 ct_paytype__img">
+                    </div>
+                    <div class="col-lg-8 col-md-7 ct_paytype__description">
+                        <h3 class="title">Apartado</h3>
+                        <div class="content">
+                            <p>
+                                En Microtec aparta el celular que quieras desde $50 pesos, y velo pagando de acuerdo a tus posibilidades para estrenar en tu propio plazo
+                            </p>    
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="ct_paycontent bg-white">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 ct_paycontent__content">
+                        <h3 class="title">Obtén el mejor equipo con la opción de Apartado</h3>
+
+                        <h4>¿En qué consiste?</h4>
+
+                        <p>
+                            Es un sistema de apartado y pago en facilidades que Microtec ha creado para permitir que cualquier persona, sin importar sus ingresos pueda adquirir equipos telefónicos en pagos diferidos y de acuerdo a sus posibilidades, en un periodo de tiempo que pueda elegir para pagarlo; y sin que ello genere ningún tipo de interés o costos adicionales por su financiamiento.
+                        </p>
+
+                        <div class="row my-4">
+                            <div class="col-12 col-md-5 text-center mb-3">
+                                <img class="img-fluid" src="assets/img/phone/tipos/banners/apartado2.jpg" alt="">
+                            </div>
+                            <div class="col-12 col-md-7">
+                                <h4>¿Qué beneficios obtengo con el apartado?</h4>
+
+                                <p>
+                                    Puedes escoger el celular que desees y “congelar su precio”, para que en caso de que hubiera un posible cambio a futuro en su precio, tú lo pudieras obtener al precio inicial de cuando lo apartaste. Además, podrás apartarlo en el color que quieras y con la capacidad que prefieras de acuerdo a su disponibilidad.
+                                </p>  
+                                <p>
+                                    Tendrás la opción de elegir el plazo máximo, la periodicidad en los pagos (semanales o quincenales), así como el monto de cada uno de ellos, con los que podrás estrenar tu equipo una vez que lo termines de pagar.
+                                </p> 
+                                <p>
+                                    Al realizar el apartado de tu primer equipo y ser un cliente que cumpla con sus pagos de manera puntual a lo largo del plazo establecido, serás acreedor a una calificación positiva para obtener un crédito que te permita estrenar un segundo equipo y estrenarlo de inmediato; con la opción de irlo pagando mientras ya disfrutas de él.
+                                </p> 
+                            </div>
+                        </div>
+                        
+                       <h3 class="title">¿Qué requisitos debo cumplir?</h3>
+
+                       <p>
+                           Para apartar tu celular sólo te pedimos presentar una identificación oficial vigente y realizar el pago de t apartado, mismo puede ser de cualquier cantidad que tú determines... siempre sea a partir de $50.00 mínimo.
+                       </p>
+                    </div>
+                </div>
+            </div>
+        </section>  
+    </div>
+    
+
+    <footer class="footer">
+        <div class="row footer__pre m-0">
+            <div class="col-lg-3 col-md-4">
+                <a href=""><img src="assets/img/logos/microtec.png" class="ct_logo img-fluid"></a>
+            </div>
+            <div class="col-lg-9 col-md-8 footer__descripcion">
+                <p>Somos una empresa sólida con la visión de ser líderes en la distribución de productos y servicios de comunicación y tecnología, mediante un sistema eficiente y moderno, basado en la constante generación de valor.</p>
+            </div>
+        </div>
+        <div class="row bg--lightblue footer__final m-0">
+            <div class="col-lg-12 text-center">
+                <p>MICROTEC es marca registrada. Somos Distribuidor Autorizado Telcel R7. Derechos Reservados © 2019-2020 Microtecnología del Golfo S.A. de C.V.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- MOdales promociones -->
+    <!-- Button trigger modal -->
+   <!--  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#promos-destacados">
+      Launch demo modal
+    </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade modal-destacados" id="promos-destacados" tabindex="-1" role="dialog" aria-labelledby="promos-destacadosTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content modal-destacados__content">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="modal-body">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="false" data-touch="false">
+    <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+    <div class="row modal-destacados__content ct_modalpromos">
+        <div class="col-lg-5 ct_modalpromos__product">
+            <img src="assets/img/home/popups/promo-destas/Moto_g8_play.png" class="img-fluid">
+        </div>
+        <div class="col-lg-7 ct_modalpromos__info" data-code="TPC7GREY">
+            <h4 class="info-title">Motorola Motog8 Play</h4>
+
+            <h6 class="info-subtitle">Cámara de profundidad</h6>
+            <p>
+            Con un lente ultra gran angular puedes obtener 4 veces más área de visión en la toma.
+            </p>
+
+            <h6 class="info-subtitle">Procesador hasta 30% más rápido.</h6>
+            <p>
+            Siente la velocidad de un procesador octa-core y disfruta el rendimiento que es 30% más rápido. Las aplicaciones se abren rápidamente, por lo que vas directamente a lo que quieres.
+            </p>
+
+            <h6 class="info-subtitle">Pantalla Max Vision de 6.2" (19:9) HD+</h6>
+            <p>
+            Observa cómo cobran vida las películas y videos en una pantalla Max Vision HD+ de 6.2" que se extiende de extremo a extremo. Con una relación de aspecto de 19:9, obtienes una vista más amplia de todo tu contenido favorito.
+            </p>
+
+            <h6 class="info-subtitle">Súper batería de 4000 mAh</h6>
+            <p>
+            Hasta 2 días de batería y carga rápida. No detengas tu día por quedarte sin energía. Cuando lo necesites recarga a gran velocidad.
+            </p>
+
+            <button class="btn btncol--purple btnsize--small vproducto" data-dismiss="modal">Ver mas</button>                     
+        </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+    <div class="row modal-destacados__content ct_modalpromos">
+        <div class="col-lg-5 ct_modalpromos__product">
+            <img src="assets/img/home/popups/promo-destas/huaweit5.jpg" class="img-fluid">
+        </div>
+        <div class="col-lg-7 ct_modalpromos__info" data-code="TPC7GREY">
+            <h4 class="info-title">HUAWEI Tablet T3 10 LTE</h4>
+
+            <h6 class="info-subtitle">Diseño elegante, pantalla brillante</h6>
+            <p>
+            Toca el poder del brillante diseño de tu HUAWEI MediaPad T3 10 LTE. Deslúmbrate con los colores vibrantes de su pantalla de 9.6 pulgadas. Siente la calidad, está realizado en una pieza única de aluminio anodizado.
+            </p>
+
+            <h6 class="info-subtitle">Visión y claridad</h6>
+            <p>
+            El HUAWEI MediaPad T3 10 LTE protege tu vista con el modo especial de luz baja que te permitirá usarlo sin interrupciones reduciendo el esfuerzo que hacen tus ojos y ayudando a preservar tus patrones de sueño naturales.
+            </p>
+
+            <h6 class="info-subtitle">Felicidad duradera</h6>
+            <p>
+            Destácate en cualquier lado. El HUAWEI MediaPad T3 10 LTE es tu compañero ideal tanto en el día como en la noche. Su batería de larga duración se asegurará que tengas todas las herramientas que necesitas durante el tiempo que necesites.
+            </p>
+
+            <h6 class="info-subtitle">Lleva a tu familia contigo</h6>
+            <p>
+            El acceso inteligente a las aplicaciones y al contenido te permitirán que otros usen tu dispositivo mientras mantienes el control total. Podrán jugar tus hijos, podrás compartirlo con otros o incluso evitar distraerte. Tú eres el amo.
+            </p>
+
+             <button class="btn btncol--purple btnsize--small vproducto" data-dismiss="modal">Ver mas</button>                         
+        </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+    <div class="row modal-destacados__content ct_modalpromos">
+        <div class="col-lg-5 ct_modalpromos__product">
+            <img src="assets/img/home/popups/promo-destas/motrzr.jpg" class="img-fluid">
+        </div>
+        <div class="col-lg-7 ct_modalpromos__info" data-code="TPC7GREY">
+            <h4 class="info-title">Razr</h4>
+
+            <h6 class="info-subtitle">El icónico smartphone plegable, reinventado</h6>
+            <p>
+            Diseño compacto y de bolsillo que se abre para revelar una impresionante pantalla táctil de tamaño completo con la última tecnología.
+            </p>
+
+            <h6 class="info-subtitle">Diseño que rompe el status quo</h6>
+            <p>
+            Diseño compacto y de bolsillo que se abre para revelar una impresionante pantalla táctil de tamaño completo con la última tecnología.
+            </p>
+
+            <h6 class="info-subtitle">Complejidad simplificada</h6>
+            <p>
+            Gracias a su innovador diseño, el razr pliega por completo su pantalla sin dejar espacios. Este parteaguas de la ingeniería protege la pantalla y permite crear un diseño aún más delgado y compacto.
+            </p>
+
+            <h6 class="info-subtitle">Pantallas dobles. Experiencia singular.</h6>
+            <p>
+            Las pantallas exterior interactiva y principal flexible están diseñadas para trabajar juntas. Cuando necesites más información o desees una vista más grande, sólo es necesario abrir el smartphone. Lo que sea que veas en la pantalla exterior se mueve mágicamente hacia la pantalla principal flexible que más grande.
+            </p>
+
+             <button class="btn btncol--purple btnsize--small vproducto" data-dismiss="modal">Ver mas</button>                      
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+    </a> -->
+    </div>
+
+    </div>
+    <div class="modal-footer d-none">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Button trigger modal -->
+  <!--   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-fpagos">
+    Launch demo modal
+    </button> -->
+
+    <!-- Modal Tipó Pagos-->
+    <div class="modal fade mfpagos" id="modal-fpagos" tabindex="-1" role="dialog" aria-labelledby="modal-fpagosTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Lleváte tu equipo a Crédito!! ...</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mfpagos--body">
+                    <div class="mfpagos__container info-pago info-pago--w70">
+                        <div class="row">
+                               <div class="col-lg-5 info-pago__image info-pago--align">
+                                   <img src="assets/img/home/popups/formas-pago/taf.png" class="img-fluid infoimage">
+                               </div>
+                               <div class="col-lg-7 info-pago__description info-pago--align">
+                                   <h4 class="title">TAF</h4>
+
+                                    <p>Trámitalo con tu INE con ese crédito podrás adquirir equipos celulares para pagar apartir de 18 mensualidades</p>
+                               </div>
+                           </div>   
+                    </div>
+                    <div class="mfpagos__container info-pago info-pago--w70">
+                        <div class="row">
+                                <div class="col-lg-7 info-pago--align info-pago__description">
+                                   <h4 class="title">Con tu cuenta de Facebook</h4>
+
+                                    <p>Solo necesitas ingresar tu datos en facebook</p>
+                               </div>
+                               <div class="col-lg-5 info-pago--align info-pago__image">
+                                   <img src="assets/img/home/popups/formas-pago/eliminar-el-me-gusta-750x430.jpg" class="img-fluid infoimage">
+                               </div>
+                               
+                           </div>   
+                    </div>
+                </div>
+                <div class="modal-footer d-none">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Tipo de pago APartado  -->
+    <div class="modal fade mfpagos" id="modal-fapartado" tabindex="-1" role="dialog" aria-labelledby="modal-fapartadoTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="exampleModalLongTitle">APARTA TU equipo de la manera más fácil !!!!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mfpagos--body">
+                    <div class="mfpagos__container info-pago info-pago--wall">
+                        <div class="row">
+                               <div class="col-lg-5 info-pago__image info-pago--align">
+                                   <img src="assets/img/home/popups/formas-pago/equipos3.jpg" class="img-fluid">
+                               </div>
+                               <div class="col-lg-7 info-pago__description info-pago--align fsize-lg">
+                                   <h4 class="title">APARTA TU EQUIPO DESDE $50</h4>
+
+                                    <p>
+                                        Elige el equipo y apártalo, asegura el mejor precio y si al final quieres otro cámbialo.
+                                    </p>
+
+                                    <p>
+                                        Elige entre mas de 200 equipos...
+                                    </p>
+                                    
+                               </div>
+                           </div>   
+                    </div>
+                </div>
+                <div class="modal-footer d-none">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Tipo de pago EQUIPO GRATIS O FINANCIADO  -->
+    <div class="modal fade mfpagos" id="modal-ffinanciado" tabindex="-1" role="dialog" aria-labelledby="modal-ffinanciadoTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Los mejores planes para que estrenes equipo !!!!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mfpagos--body">
+                    <div class="mfpagos__container info-pago info-pago--ligthblue">
+                        <div class="row">
+                               <div class="col-lg-7 info-pago__image text-center">
+                                   <img src="assets/img/home/popups/formas-pago/planes/equiporenta.jpg" class="img-fluid">
+                               </div>
+                               <div class="col-lg-5 info-pago__description info-pago--align fsize-lg">
+                                   <h4 class="title title--orange">ELIGE EL MEJOR PLAN</h4>
+
+                                    <p>
+                                        Estrena el mejor equipo al contratar o renovar tu plan. 
+                                        Llévate un equipo <strong class="enphasis">GRATIS!</strong>                      
+                                    </p>
+                                    
+                               </div>
+                           </div>   
+                    </div>
+                </div>
+                <div class="modal-footer d-none">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="//cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>  
+    <script src="assets/js/jquery.twbsPagination.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- <script src="assets/js/bootstrap-slider.min.js"></script> -->
+
+    <script src="assets/js/init.js"></script>
+    <script src="controllers/inicio-page.js"></script>
+     <script src="assets/js/app.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,24 @@
+$carousel : '.ct_carousel';
+
+#{$carousel}{
+	&__indicators {
+		justify-content: flex-start;
+		margin-left: 0;
+		margin-right: 0;
+		bottom: -56px;
+		li {
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background-color: #777272;
+			&.active {
+				background-color: #8b3687;
+			}
+		}
+	}
+	&__img {
+		width: 100%;
+		// height: 769px;
+	}
+}
+

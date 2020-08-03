@@ -1,0 +1,106 @@
+$sidebar : '.ct_sidebar';
+$bg-headerfilter : #c6e2f6;
+
+#{$sidebar}{
+	margin-bottom: 3rem;
+	&__filter {
+		.accordion {
+			.card-header {
+				border: 1px solid #8fcde6;
+				background: rgba(255,255,255,1);
+				background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(192,231,245,1) 100%);
+				background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(192,231,245,1)));
+				background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(192,231,245,1) 100%);
+				background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(192,231,245,1) 100%);
+				background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(192,231,245,1) 100%);
+				background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(192,231,245,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c0e7f5', GradientType=0 );
+				.btn-link {
+					color: #1f346f;
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.range-box {
+			height: 6rem;
+			.value {
+				position: absolute;
+				top: 30px;
+				left: 50%;
+				margin: 0 0 0 -20px;
+				width: 64px;
+				text-align: center;
+				display: block;
+				background: #dddddd;
+				padding: .3rem;
+				border: 1px solid #9c9a9a;
+				border-radius: 3px;
+				font-weight: normal;
+				font-family: Verdana,Arial,sans-serif;
+				font-size: 14px;
+				color: #333;
+			}
+
+			.price-range-both.value {
+				width: 100px;
+				margin: 0 0 0 -50px;
+				top: 26px;
+			}
+
+			.price-range-both {
+				display: none; 
+			}
+
+			.value i {
+				font-style: normal;
+			}
+			.ui-widget-header {
+				background-color: #304487;
+			}
+		}
+		
+	}
+	.lmarcas {
+		display: flex;
+		flex-wrap: wrap;
+		height: 600px;
+		overflow-y: scroll;
+		.nav-item {
+			width: calc(100% / 2);
+			.nav-link {
+				padding: .2rem .8rem;
+			}
+		}
+	}
+}
+
+#brandfilter {
+
+	.nav-item {
+		.form-check {
+			.form-check-label {
+				padding: .2rem .8rem;
+				&:hover {
+					background-color: #ffecb5;
+					padding: .2rem .8rem;
+					border-radius: 16px;
+				}
+			}
+			.form-check-input {
+				position: absolute;
+				opacity: 0;
+				cursor: pointer;
+				&:checked ~ .form-check-label {
+					background-color: #ffd607;
+					padding: .2rem .8rem;
+					border-radius: 16px;
+				}
+			}
+		}
+	}
+}

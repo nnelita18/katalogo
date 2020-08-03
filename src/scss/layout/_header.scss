@@ -1,0 +1,68 @@
+$nav-busqueda : '.nav-busqueda';
+$search-btn-color: #d83e3d;
+
+#{$nav-busqueda} {
+	background-color: #c6e2f6;
+	padding: 1.25rem;
+	
+	.ct_search {
+		display: flex;
+		align-items: center;
+		&__container {
+			border: 1px solid #adb1b4;
+			.search-panel {
+				.dropdown-toggle {
+					background-color: #fff;
+					height: 100%;
+				}
+			}
+			.search-panel {
+				.dropdown-menu {
+					padding: 0;
+					li {
+						a {
+							cursor: pointer;
+							padding: .8rem;
+							display: block;
+						}
+						border-bottom: 1px solid rgba(0,0,0,.15);
+					}
+				}
+				&__filter {
+					border-right: 1px solid rgba(0,0,0,.15);
+				}
+			}
+		}
+		&__btn {			
+			background-color: $search-btn-color;
+			color: #fff;
+			border-radius: 0;
+			font-family: 'Myriad Pro Bold';
+			font-size: 24px;
+			padding-left: 16px;
+			padding-right: 16px;
+		}
+		&__input {
+			border: none;
+			height: auto;
+		}
+	}
+	&__offer{
+		display: flex;
+		align-items: center;
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
+.degraded-bar {
+	background: rgba(0,36,89,1);
+	background: -moz-linear-gradient(left, rgba(0,36,89,1) 0%, rgba(37,154,196,1) 51%, rgba(0,36,89,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,36,89,1)), color-stop(51%, rgba(37,154,196,1)), color-stop(100%, rgba(0,36,89,1)));
+	background: -webkit-linear-gradient(left, rgba(0,36,89,1) 0%, rgba(37,154,196,1) 51%, rgba(0,36,89,1) 100%);
+	background: -o-linear-gradient(left, rgba(0,36,89,1) 0%, rgba(37,154,196,1) 51%, rgba(0,36,89,1) 100%);
+	background: -ms-linear-gradient(left, rgba(0,36,89,1) 0%, rgba(37,154,196,1) 51%, rgba(0,36,89,1) 100%);
+	background: linear-gradient(to right, rgba(0,36,89,1) 0%, rgba(37,154,196,1) 51%, rgba(0,36,89,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002459', endColorstr='#002459', GradientType=1 );		
+	height: 24px;
+}

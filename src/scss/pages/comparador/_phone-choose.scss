@@ -1,0 +1,70 @@
+$comparador : '.ct_comparador';
+
+#{$comparador}{
+	&__banner {
+		// background-color: #ffbb10;
+background: rgba(255,187,16,1);
+					background: -moz-linear-gradient(left, rgba(255,187,16,1) 0%, rgba(255,214,7,1) 100%);
+					background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,187,16,1)), color-stop(100%, rgba(255,214,7,1)));
+					background: -webkit-linear-gradient(left, rgba(255,187,16,1) 0%, rgba(255,214,7,1) 100%);
+					background: -o-linear-gradient(left, rgba(255,187,16,1) 0%, rgba(255,214,7,1) 100%);
+					background: -ms-linear-gradient(left, rgba(255,187,16,1) 0%, rgba(255,214,7,1) 100%);
+					background: linear-gradient(to right, rgba(255,187,16,1) 0%, rgba(255,214,7,1) 100%);
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbb10', endColorstr='#ffd607', GradientType=1 );		
+		color: $primary-ct;
+		padding: 1rem 0;
+		text-align: center;
+		.title {
+			font-weight: 400;
+		}
+	}
+}
+
+.equipocomp {
+	
+	&__img {
+		position: relative;
+		text-align: center;
+		height: 300px;
+		.addmore {
+			font-size: 6rem;
+			color: #9dcef1;
+			position: absolute;
+			width: 100px;
+			top: 25%;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			&:hover {
+				color: #db443c;
+			}
+		}
+		.cargadorimg {
+			width: 160px;
+			height: auto;
+		}
+		.img-dfl {
+			width: 300px;
+			height: auto;
+		}
+	}
+	&__info {
+		padding: .6rem 1rem;
+		text-align: center;
+		.info-marca {
+			color: $purphe-link;
+			font-size: 1.28rem;
+		}
+		.info-modelo {
+			color: #304487;
+		}
+	}
+}
+
+.previos {
+	padding-bottom: 3rem;
+	margin-top: 4.5rem;
+	&__title {
+		margin: 0 0 1rem;
+	}
+}

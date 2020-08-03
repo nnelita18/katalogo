@@ -1,0 +1,14 @@
+$cat-equipos : '.cat-equipos';
+
+#{$cat-equipos}{
+	&__eq {
+		margin-bottom: 1.2rem;
+	}
+	
+}
+
+.products-container {
+	.alert-warning {
+		margin: 3rem auto;
+	}
+}

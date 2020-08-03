@@ -46,7 +46,8 @@ config.browserSync = {
     files: [
         config.paths.dist.css,
         config.paths.dist.js,
-        '**/*.html'
+        '**/*.html',
+        '**/*.php'
     ]
 };
 

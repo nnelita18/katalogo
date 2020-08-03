@@ -1,0 +1,13 @@
+$ct_bannerpromos : '.ct_bannerpromos';
+
+#{$ct_bannerpromos} {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	&__item {
+		// flex: 1;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+}

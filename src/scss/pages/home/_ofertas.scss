@@ -1,0 +1,11 @@
+$ofertas : '.ct_ofertas';
+
+#{$ofertas}{
+	padding-top: 15px;
+	&__item {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}

@@ -10,7 +10,7 @@
     <meta name="keywords" content="" />
     <meta name="author" content="" />
 
-    <title>Bootstrap 4 Boilerplate</title>
+    <title>Catálogo Productos - Microtec</title>
 
     <link
       rel="stylesheet"
@@ -18,19 +18,722 @@
       integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap-slider.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    
     <link rel="stylesheet" href="assets/css/styles.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
   </head>
 
   <body>
-    <h1>Hello, world!</h1>
+    <div class="degraded-bar"></div>
+    <section class="nav-busqueda">        
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <a href=""><img src="assets/img/logos/microtec.png" class="ct_logo img-fluid"></a>
+          </div>
+          <div class="col-lg-6 ct_search col-md-8">
+            <div class="input-group ct_search__container">
+                <div class="input-group-btn search-panel" data-search="students">
+                    <button type="button" class="btn btn-default dropdown-toggle search-panel__filter" data-toggle="dropdown">
+                      <span class="search_by">Filtrar por:</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a data-search="students">Marca</a></li>
+                      <div class="divider"></div>
+                      <li><a data-search="teachers">Modelo</a></li>
+                    </ul>
+                </div>   
+                <input type="text" class="form-control ct_search__input" name="x" placeholder="Etiqueta de búsqueda">
+                <span class="input-group-btn">
+                    <button class="btn btn-default ct_search__btn" type="button">BUSCAR</button>
+                </span>
+            </div> 
+          </div>  
+          <div class="col-lg-3 nav-busqueda__offer col-md-12">
+            <p>¡EN MICROTEC SIEMPRE ESTRENAS FÁCIL Y RÁPIDO!</p>
+          </div>
+        </div>
+      </div>      
+    </section>
 
-    <script
+    <nav class="navbar ct_navbarmenu navbar-expand-lg navbar-dark ct_bg--blue">
+        <!-- <a class="navbar-brand" href="#">Expand at lg</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentLG" aria-controls="navbarSupportedContentLG" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContentLG">
+            <ul class="navbar-nav mr-auto ct_navbarmenu__nemulist">
+                <li class="nav-item">
+                    <a class="nav-link" href="/pagina/ktalogo/">
+                        <i class="fas fa-home mr-2 ico-menu"></i>INICIO
+                    </a>
+                </li>
+                <li class="nav-item amarcas">
+                    <a class="nav-link hovmarcas" href="catalogo.php"><i class="fas fa-mobile-alt ico-menu mr-3"></i> MARCAS EQUIPOS</a>
+                    <ul class="dropdown-menu multi-column columns-3 branlist"><div id="lista-marcas" class="row"></div></ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link alink" href="cat-promociones.php">
+                        <img src="assets/img/icons/promos.png" alt="" class="icon-menu">PROMOCIONES DEL MES
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link alink" href="cat-novedades.php">
+                        <img src="assets/img/icons/star.svg" alt="" class="icon-menu">
+                        DESTACADOS & NOVEDADES
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link alink" href="cat-liquidacion.php">
+                        <img src="assets/img/icons/liquid.png" alt="" class="icon-dfl">
+                        EQUIPOS EN LIQUIDACIÓN
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="content-replace">
+        <section class="ct_promociones">
+            <div class="container-fluid">
+                <div class="row row-eq-height">
+                    <div class="col-lg-3 ct_promociones__categorias pr-0 ht-promo">
+                        <div class="btn-group-vertical promo-categorias">
+                            <button type="button" class="btn btn-secondary promo-categorias__opc"><i class="fas fa-mobile-alt mr-3"></i>SMARTPHONES</button>
+                            <button type="button" class="btn btn-secondary promo-categorias__opc"><i class="fas fa-tablet-alt mr-3"></i></i>TABLETS / NOTEPADS</button>
+                            <button type="button" class="btn btn-secondary promo-categorias__opc"><i class="fas fa-wifi mr-3"></i>MÓDEMS / INTERNET</button>
+                            <button type="button" class="btn btn-secondary promo-categorias__opc"><i class="fas fa-volume-up mr-3"></i>BOCINAS BLUETOOTH</button>
+                            <button type="button" class="btn btn-secondary promo-categorias__opc"><i class="fas fa-headphones-alt mr-3"></i>AUDÍFONOS </button>
+                            <button type="button" class="btn btn-secondary promo-categorias__opc"><i class="fas fa-keyboard mr-3"></i>ACCESORIOS / PERIFÉRICOS </button>
+                        </div> 
+                        <div class="ct_promociones__litem">
+                            <img src="assets/img/home/promociones/promo-left.jpg" class="img-fluid ct_img-cust">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ct_promociones__slider">
+                        <div id="carousel" class="carousel slide carousel-fade ct_carousel" data-ride="carousel" data-interval="6000">
+                            <ol class="carousel-indicators ct_carousel__indicators">
+                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel" data-slide-to="1"></li>
+                                <li data-target="#carousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <a href="#">
+                                         <picture>
+                                          <img srcset="assets/img/slider/sl1.jpg" alt="responsive image" class="d-block img-fluid ct_carousel__img">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <!-- /.carousel-item -->
+                                <div class="carousel-item">
+                                    <a href="#">
+                                        <picture>
+                                          <img srcset="assets/img/slider/sl2.jpg" alt="responsive image" class="d-block img-fluid ct_carousel__img">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <!-- /.carousel-item -->
+                                <div class="carousel-item">
+                                    <a href="#">
+                                        <picture>
+                                          <img srcset="assets/img/slider/sl3.jpg" alt="responsive image" class="d-block img-fluid ct_carousel__img">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <!-- /.carousel-item -->
+                            </div>
+                        </div>
+                        <!-- /.carousel -->              
+                    </div>
+                    <div class="col-lg-3 ct_promociones__destacados destacados pl-0 ht-promo">
+                        <div class="destacados__item" data-toggle="modal" data-target="#promos-destacados" data-numbercar="0">
+                            <!-- <div class="destacados__item"  data-toggle="modal" data-target="#promos-destacados"> -->
+                            <!-- <img src="assets/img/home/promociones/nuevo1.jpg" class="destacados-img img-fluid"> -->
+                        </div>
+                        <div class="destacados__item" data-toggle="modal" data-target="#promos-destacados" data-numbercar="1">
+                            <!-- <img src="assets/img/home/promociones/nuevo2.jpg" class="destacados-img img-fluid"> -->
+                        </div>
+                        <div class="destacados__item" data-toggle="modal" data-target="#promos-destacados" data-numbercar="2">
+                            <!-- <img src="assets/img/home/promociones/nuevo3.jpg" class="destacados-img img-fluid"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ct_tipos-pago">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 ct_tipos-pago__box" data-toggle="modal" data-target="#modal-fpagos">
+                        <div class="pagosbox">
+                            <h5 class="pagosbox__title">TU EQUIPO A CRÉDITO</h5>
+                            <span class="pagosbox__description">Tarjeta Amigo Fácil / Facebook</span>    
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ct_tipos-pago__box" data-toggle="modal" data-target="#modal-fapartado">
+                        <div class="pagosbox">
+                            <h5 class="pagosbox__title">TU EQUIPO EN APARTADO FÁCIL</h5>
+                            <span class="pagosbox__description">con pagos diferidos a tus posibilidades</span>    
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ct_tipos-pago__box" data-toggle="modal" data-target="#modal-ffinanciado">
+                        <div class="pagosbox">
+                            <h5 class="pagosbox__title">EQUIPO GRATIS O FINANCIADO</h5>
+                            <span class="pagosbox__description">al contratar tu Plan Tarifario a 24 meses</span>    
+                        </div>
+                    </div>    
+                </div>            
+            </div>
+        </section>
+
+        <section class="ct_ofertas">
+            <div class="container-fluid">
+                <div class="row contr-offs">
+                    <div class="col-lg-4 col-md-6 ct_ofertas__item">
+                        <img src="assets/img/home/ofertas/of1.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 col-md-6  ct_ofertas__item">
+                        <img src="assets/img/home/ofertas/of2.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 col-md-6 ct_ofertas__item">
+                        <img src="assets/img/home/ofertas/of3.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ct_equiposfilter">
+            <div class="container-fluid">
+                <div class="row row-eq-height">
+                    <div class="col-lg-5 ct_equiposfilter__tipo tipo-equipos">  
+                        <div class="row">
+                            <div class="col-lg-6 p-0 tipo-equipos__img col-md-6">
+                                <img src="assets/img/home/filtro/smartphone.jpg" alt="" class="img-fluid imgfull">
+                            </div>
+                            <div class="col-lg-6 p-0 tipo-equipos__name col-md-6">
+                                <div class="container-filters">
+                                    <label class="container-filters__item equipo-title">VER EQUIPOS</label>
+                                    <button type="button" class="btn btn-secondary container-filters__item">Los más vendidos</button>
+                                    <button type="button" class="btn btn-secondary container-filters__item">Los más nuevos</button>
+                                    <button type="button" class="btn btn-secondary container-filters__item">Ofertas</button>
+                                    <button type="button" class="btn btn-secondary container-filters__item">Remates</button>
+                                </div>
+                            </div> 
+                        </div>
+                                           
+                    </div>
+                    <div class="col-lg-7  ct_equiposfilter__lista ct_equipomov p-0">
+                        <div class="carousel slide ct_equipomov__carousel carouselmovil" id="carousel-filter" data-ride="carousel" data-interval="2000" data-pause="hover">
+                            <!-- <ol class="carousel-indicators">
+                                <li data-target="#carousel-filter" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-filter" data-slide-to="1"></li>
+                                <li data-target="#carousel-filter" data-slide-to="2"></li>
+                            </ol> -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active carouselmovil__item">
+                                    <div class="row row-eq-height carousel-h">
+                                        <div class="col-lg-4">
+                                            <div class="equipomov">
+                                                <picture class="equipomov__header">
+                                                    <div class="header-image">
+                                                        <img src="assets/img/home/filtro-equipos/ImagenFrontal.jpg" class="img-fluid equipomov-img">
+                                                    </div>
+
+                                                    <div class="header-side" data-code="TPC7GREY">
+                                                        <button class="ico--view header-side__icon vproducto" title="VER"></button>
+
+                                                        <button class="ico--compare compare-product header-side__icon vcomparador" title="COMPARAR"></button>
+                                                    </div>
+                                                </picture>
+                                                <div class="equipomov__body element">
+                                                    <h4 class="element__marca">
+                                                        SAMSUNG
+                                                    </h4>
+                                                    <h3 class="element__modelo">
+                                                        GALAXY A30
+                                                    </h3>
+                                                    
+                                                    <span class="element__predis">
+                                                        Precio Distribuidor: $4,499.00
+                                                    </span>
+                                                    <span class="element__prepublico">
+                                                       $4,999.00
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>                               
+                                    
+                                        <div class="col-lg-4">
+                                            <div class="equipomov">
+                                                <picture class="equipomov__header">
+                                                    <div class="header-image">
+                                                        <img src="assets/img/home/filtro-equipos/ImagenFrontal.jpg" class="img-fluid equipomov-img">
+                                                    </div>
+
+                                                    <div class="header-side" data-code="TPC7GREY">
+                                                        <button class="ico--view header-side__icon vproducto" title="VER"></button>
+
+                                                        <button class="ico--compare compare-product header-side__icon vcomparador" title="COMPARAR"></button>
+                                                    </div>
+                                                </picture>
+                                                <div class="equipomov__body element">
+                                                    <h4 class="element__marca">
+                                                        SAMSUNG
+                                                    </h4>
+                                                    <h3 class="element__modelo">
+                                                        GALAXY A30
+                                                    </h3>
+                                                    
+                                                    <span class="element__predis">
+                                                        Precio Distribuidor: $4,499.00
+                                                    </span>
+                                                    <span class="element__prepublico">
+                                                       $4,999.00
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>                          
+                                    
+                                        <div class="col-lg-4">
+                                            <div class="equipomov">
+                                                <picture class="equipomov__header">
+                                                    <div class="header-image">
+                                                        <img src="assets/img/home/filtro-equipos/ImagenFrontal.jpg" class="img-fluid equipomov-img">
+                                                    </div>
+
+                                                    <div class="header-side" data-code="TPC7GREY">
+                                                        <button class="ico--view header-side__icon vproducto" title="VER"></button>
+
+                                                        <button class="ico--compare compare-product header-side__icon vcomparador" title="COMPARAR"></button>
+                                                    </div>
+                                                </picture>
+                                                <div class="equipomov__body element">
+                                                    <h4 class="element__marca">
+                                                        SAMSUNG
+                                                    </h4>
+                                                    <h3 class="element__modelo">
+                                                        GALAXY A30
+                                                    </h3>
+                                                    
+                                                    <span class="element__predis">
+                                                        Precio Distribuidor: $4,499.00
+                                                    </span>
+                                                    <span class="element__prepublico">
+                                                       $4,999.00
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="carousel-item carouselmovil__item">
+                                    <div class="row row-eq-height carousel-h">
+                                        <div class="col-lg-4">
+                                            <div class="equipomov">
+                                                <picture class="equipomov__header">
+                                                    <div class="header-image">
+                                                        <img src="assets/img/home/filtro-equipos/ImagenFrontal.jpg" class="img-fluid equipomov-img">
+                                                    </div>
+
+                                                    <div class="header-side" data-code="TPC7GREY">
+                                                        <button class="ico--view header-side__icon vproducto" title="VER"></button>
+
+                                                        <button class="ico--compare compare-product header-side__icon vcomparador" title="COMPARAR"></button>
+                                                    </div>
+                                                </picture>
+                                                <div class="equipomov__body element">
+                                                    <h4 class="element__marca">
+                                                        SAMSUNG
+                                                    </h4>
+                                                    <h3 class="element__modelo">
+                                                        GALAXY A30
+                                                    </h3>
+                                                    
+                                                    <span class="element__predis">
+                                                        Precio Distribuidor: $4,499.00
+                                                    </span>
+                                                    <span class="element__prepublico">
+                                                       $4,999.00
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>                               
+                                    
+                                        <div class="col-lg-4">
+                                            <div class="equipomov">
+                                                <picture class="equipomov__header">
+                                                    <div class="header-image">
+                                                        <img src="assets/img/home/filtro-equipos/ImagenFrontal.jpg" class="img-fluid equipomov-img">
+                                                    </div>
+
+                                                    <div class="header-side" data-code="TPC7GREY">
+                                                        <button class="ico--view header-side__icon vproducto" title="VER"></button>
+
+                                                        <button class="ico--compare compare-product header-side__icon vcomparador" title="COMPARAR"></button>
+                                                    </div>
+                                                </picture>
+                                                <div class="equipomov__body element">
+                                                    <h4 class="element__marca">
+                                                        SAMSUNG
+                                                    </h4>
+                                                    <h3 class="element__modelo">
+                                                        GALAXY A30
+                                                    </h3>
+                                                    
+                                                    <span class="element__predis">
+                                                        Precio Distribuidor: $4,499.00
+                                                    </span>
+                                                    <span class="element__prepublico">
+                                                       $4,999.00
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>                          
+                                    
+                                        <div class="col-lg-4">
+                                            <div class="equipomov">
+                                                <picture class="equipomov__header">
+                                                    <div class="header-image">
+                                                        <img src="assets/img/home/filtro-equipos/ImagenFrontal.jpg" class="img-fluid equipomov-img">
+                                                    </div>
+
+                                                    <div class="header-side" data-code="TPC7GREY">
+                                                        <button class="ico--view header-side__icon vproducto" title="VER"></button>
+
+                                                        <button class="ico--compare compare-product header-side__icon vcomparador" title="COMPARAR"></button>
+                                                    </div>
+                                                </picture>
+                                                <div class="equipomov__body element">
+                                                    <h4 class="element__marca">
+                                                        SAMSUNG
+                                                    </h4>
+                                                    <h3 class="element__modelo">
+                                                        GALAXY A30
+                                                    </h3>
+                                                    
+                                                    <span class="element__predis">
+                                                        Precio Distribuidor: $4,499.00
+                                                    </span>
+                                                    <span class="element__prepublico">
+                                                       $4,999.00
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev carousel-icon" href="#carousel-filter" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next carousel-icon" href="#carousel-filter" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </section>    
+    </div>
+    
+
+    <footer class="footer">
+        <div class="row footer__pre m-0">
+            <div class="col-lg-3 col-md-4">
+                <a href=""><img src="assets/img/logos/microtec.png" class="ct_logo img-fluid"></a>
+            </div>
+            <div class="col-lg-9 col-md-8 footer__descripcion">
+                <p>Somos una empresa sólida con la visión de ser líderes en la distribución de productos y servicios de comunicación y tecnología, mediante un sistema eficiente y moderno, basado en la constante generación de valor.</p>
+            </div>
+        </div>
+        <div class="row bg--lightblue footer__final m-0">
+            <div class="col-lg-12 text-center">
+                <p>MICROTEC es marca registrada. Somos Distribuidor Autorizado Telcel R7. Derechos Reservados © 2019-2020 Microtecnología del Golfo S.A. de C.V.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- MOdales promociones -->
+    <!-- Button trigger modal -->
+   <!--  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#promos-destacados">
+      Launch demo modal
+    </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade modal-destacados" id="promos-destacados" tabindex="-1" role="dialog" aria-labelledby="promos-destacadosTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content modal-destacados__content">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="modal-body">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="false" data-touch="false">
+    <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+    <div class="row modal-destacados__content ct_modalpromos">
+        <div class="col-lg-5 ct_modalpromos__product">
+            <img src="assets/img/home/popups/promo-destas/Moto_g8_play.png" class="img-fluid">
+        </div>
+        <div class="col-lg-7 ct_modalpromos__info" data-code="TPC7GREY">
+            <h4 class="info-title">Motorola Motog8 Play</h4>
+
+            <h6 class="info-subtitle">Cámara de profundidad</h6>
+            <p>
+            Con un lente ultra gran angular puedes obtener 4 veces más área de visión en la toma.
+            </p>
+
+            <h6 class="info-subtitle">Procesador hasta 30% más rápido.</h6>
+            <p>
+            Siente la velocidad de un procesador octa-core y disfruta el rendimiento que es 30% más rápido. Las aplicaciones se abren rápidamente, por lo que vas directamente a lo que quieres.
+            </p>
+
+            <h6 class="info-subtitle">Pantalla Max Vision de 6.2" (19:9) HD+</h6>
+            <p>
+            Observa cómo cobran vida las películas y videos en una pantalla Max Vision HD+ de 6.2" que se extiende de extremo a extremo. Con una relación de aspecto de 19:9, obtienes una vista más amplia de todo tu contenido favorito.
+            </p>
+
+            <h6 class="info-subtitle">Súper batería de 4000 mAh</h6>
+            <p>
+            Hasta 2 días de batería y carga rápida. No detengas tu día por quedarte sin energía. Cuando lo necesites recarga a gran velocidad.
+            </p>
+
+            <button class="btn btncol--purple btnsize--small vproducto" data-dismiss="modal">Ver mas</button>                     
+        </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+    <div class="row modal-destacados__content ct_modalpromos">
+        <div class="col-lg-5 ct_modalpromos__product">
+            <img src="assets/img/home/popups/promo-destas/huaweit5.jpg" class="img-fluid">
+        </div>
+        <div class="col-lg-7 ct_modalpromos__info" data-code="TPC7GREY">
+            <h4 class="info-title">HUAWEI Tablet T3 10 LTE</h4>
+
+            <h6 class="info-subtitle">Diseño elegante, pantalla brillante</h6>
+            <p>
+            Toca el poder del brillante diseño de tu HUAWEI MediaPad T3 10 LTE. Deslúmbrate con los colores vibrantes de su pantalla de 9.6 pulgadas. Siente la calidad, está realizado en una pieza única de aluminio anodizado.
+            </p>
+
+            <h6 class="info-subtitle">Visión y claridad</h6>
+            <p>
+            El HUAWEI MediaPad T3 10 LTE protege tu vista con el modo especial de luz baja que te permitirá usarlo sin interrupciones reduciendo el esfuerzo que hacen tus ojos y ayudando a preservar tus patrones de sueño naturales.
+            </p>
+
+            <h6 class="info-subtitle">Felicidad duradera</h6>
+            <p>
+            Destácate en cualquier lado. El HUAWEI MediaPad T3 10 LTE es tu compañero ideal tanto en el día como en la noche. Su batería de larga duración se asegurará que tengas todas las herramientas que necesitas durante el tiempo que necesites.
+            </p>
+
+            <h6 class="info-subtitle">Lleva a tu familia contigo</h6>
+            <p>
+            El acceso inteligente a las aplicaciones y al contenido te permitirán que otros usen tu dispositivo mientras mantienes el control total. Podrán jugar tus hijos, podrás compartirlo con otros o incluso evitar distraerte. Tú eres el amo.
+            </p>
+
+             <button class="btn btncol--purple btnsize--small vproducto" data-dismiss="modal">Ver mas</button>                         
+        </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+    <div class="row modal-destacados__content ct_modalpromos">
+        <div class="col-lg-5 ct_modalpromos__product">
+            <img src="assets/img/home/popups/promo-destas/motrzr.jpg" class="img-fluid">
+        </div>
+        <div class="col-lg-7 ct_modalpromos__info" data-code="TPC7GREY">
+            <h4 class="info-title">Razr</h4>
+
+            <h6 class="info-subtitle">El icónico smartphone plegable, reinventado</h6>
+            <p>
+            Diseño compacto y de bolsillo que se abre para revelar una impresionante pantalla táctil de tamaño completo con la última tecnología.
+            </p>
+
+            <h6 class="info-subtitle">Diseño que rompe el status quo</h6>
+            <p>
+            Diseño compacto y de bolsillo que se abre para revelar una impresionante pantalla táctil de tamaño completo con la última tecnología.
+            </p>
+
+            <h6 class="info-subtitle">Complejidad simplificada</h6>
+            <p>
+            Gracias a su innovador diseño, el razr pliega por completo su pantalla sin dejar espacios. Este parteaguas de la ingeniería protege la pantalla y permite crear un diseño aún más delgado y compacto.
+            </p>
+
+            <h6 class="info-subtitle">Pantallas dobles. Experiencia singular.</h6>
+            <p>
+            Las pantallas exterior interactiva y principal flexible están diseñadas para trabajar juntas. Cuando necesites más información o desees una vista más grande, sólo es necesario abrir el smartphone. Lo que sea que veas en la pantalla exterior se mueve mágicamente hacia la pantalla principal flexible que más grande.
+            </p>
+
+             <button class="btn btncol--purple btnsize--small vproducto" data-dismiss="modal">Ver mas</button>                      
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+    </a> -->
+    </div>
+
+    </div>
+    <div class="modal-footer d-none">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Button trigger modal -->
+  <!--   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-fpagos">
+    Launch demo modal
+    </button> -->
+
+    <!-- Modal Tipó Pagos-->
+    <div class="modal fade mfpagos" id="modal-fpagos" tabindex="-1" role="dialog" aria-labelledby="modal-fpagosTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Lleváte tu equipo a Crédito!! ...</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mfpagos--body">
+                    <div class="mfpagos__container info-pago info-pago--w70">
+                        <div class="row">
+                               <div class="col-lg-5 info-pago__image info-pago--align">
+                                   <img src="assets/img/home/popups/formas-pago/taf.png" class="img-fluid infoimage">
+                               </div>
+                               <div class="col-lg-7 info-pago__description info-pago--align">
+                                   <h4 class="title">TAF</h4>
+
+                                    <p>Trámitalo con tu INE con ese crédito podrás adquirir equipos celulares para pagar apartir de 18 mensualidades</p>
+                               </div>
+                           </div>   
+                    </div>
+                    <div class="mfpagos__container info-pago info-pago--w70">
+                        <div class="row">
+                                <div class="col-lg-7 info-pago--align info-pago__description">
+                                   <h4 class="title">Con tu cuenta de Facebook</h4>
+
+                                    <p>Solo necesitas ingresar tu datos en facebook</p>
+                               </div>
+                               <div class="col-lg-5 info-pago--align info-pago__image">
+                                   <img src="assets/img/home/popups/formas-pago/eliminar-el-me-gusta-750x430.jpg" class="img-fluid infoimage">
+                               </div>
+                               
+                           </div>   
+                    </div>
+                </div>
+                <div class="modal-footer d-none">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Tipo de pago APartado  -->
+    <div class="modal fade mfpagos" id="modal-fapartado" tabindex="-1" role="dialog" aria-labelledby="modal-fapartadoTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="exampleModalLongTitle">APARTA TU equipo de la manera más fácil !!!!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mfpagos--body">
+                    <div class="mfpagos__container info-pago info-pago--wall">
+                        <div class="row">
+                               <div class="col-lg-5 info-pago__image info-pago--align">
+                                   <img src="assets/img/home/popups/formas-pago/equipos3.jpg" class="img-fluid">
+                               </div>
+                               <div class="col-lg-7 info-pago__description info-pago--align fsize-lg">
+                                   <h4 class="title">APARTA TU EQUIPO DESDE $50</h4>
+
+                                    <p>
+                                        Elige el equipo y apártalo, asegura el mejor precio y si al final quieres otro cámbialo.
+                                    </p>
+
+                                    <p>
+                                        Elige entre mas de 200 equipos...
+                                    </p>
+                                    
+                               </div>
+                           </div>   
+                    </div>
+                </div>
+                <div class="modal-footer d-none">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Tipo de pago EQUIPO GRATIS O FINANCIADO  -->
+    <div class="modal fade mfpagos" id="modal-ffinanciado" tabindex="-1" role="dialog" aria-labelledby="modal-ffinanciadoTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Los mejores planes para que estrenes equipo !!!!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mfpagos--body">
+                    <div class="mfpagos__container info-pago info-pago--ligthblue">
+                        <div class="row">
+                               <div class="col-lg-7 info-pago__image text-center">
+                                   <img src="assets/img/home/popups/formas-pago/planes/equiporenta.jpg" class="img-fluid">
+                               </div>
+                               <div class="col-lg-5 info-pago__description info-pago--align fsize-lg">
+                                   <h4 class="title title--orange">ELIGE EL MEJOR PLAN</h4>
+
+                                    <p>
+                                        Estrena el mejor equipo al contratar o renovar tu plan. 
+                                        Llévate un equipo <strong class="enphasis">GRATIS!</strong>                      
+                                    </p>
+                                    
+                               </div>
+                           </div>   
+                    </div>
+                </div>
+                <div class="modal-footer d-none">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    ></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
@@ -39,5 +742,15 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+
+    <script src="//cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>  
+    <script src="assets/js/jquery.twbsPagination.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- <script src="assets/js/bootstrap-slider.min.js"></script> -->
+
+    <script src="assets/js/init.js"></script>
+    <script src="controllers/inicio-page.js"></script>
+     <script src="assets/js/app.min.js"></script>
+
   </body>
 </html>

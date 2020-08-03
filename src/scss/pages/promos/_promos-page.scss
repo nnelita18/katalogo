@@ -1,0 +1,36 @@
+$ct_offer : '.ct_offer';
+$labeldfl : #db443c;
+$labelgreen: #2ea72e;
+
+#{$ct_offer} {
+	overflow: hidden;
+	&__label {
+		position: absolute;
+	    top: 7%;
+	    left: -19%;
+	    width: 60%;
+	    background: #e2a201;
+	    z-index: 1;
+	    color: #fff;
+	    text-align: center;
+	    -webkit-transform: rotate(36deg);
+	    transform: rotate(-45deg);
+	    padding: .5rem 2rem;
+		
+		.label-offer--text {
+			    font-size: .9rem;
+		}
+	}
+}
+
+.label-offer {
+	&--red {
+		background-color: $labeldfl;
+	}
+	&--yellow {
+		background-color: $yellow-ct;
+	}
+	&--green {
+		background-color: $labelgreen;
+	}
+}

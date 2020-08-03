@@ -1,0 +1,52 @@
+$modchoose-equipo : '.modchoose-equipo';
+
+#{$modchoose-equipo}{
+	.modal-header {
+		background-color: $purphe-link;
+		.modal-title {
+			color: #fff;
+		}
+		.close {
+			color: #fff;
+		}
+	}
+}
+
+$loquierobtn : '.loquierobtn';
+
+#{$loquierobtn}{
+	.modal-content {
+		background-color: transparent;
+		border: none;
+		.close {
+			background: #fff;
+			width: 44px;
+			height: 44px;
+			border-radius: 50%;
+			outline: 0;
+			right: -2rem;
+			position: absolute;
+			top: -2rem;
+		}
+	}
+	.ct_tipos-pago {
+		background-image: none;
+		margin-bottom: 0;
+		.pagosbox {
+			border-radius: 5px;
+			padding: 1rem;
+			text-align: center;
+			margin-bottom: .6rem;
+			background: {
+				image: url('../img/home/bg-pagos.jpg');
+				repeat: repeat-x;
+				position: top center;
+				size: cover;
+			}
+
+		}
+	}
+	.modal-footer {
+		border: none;
+	}
+}

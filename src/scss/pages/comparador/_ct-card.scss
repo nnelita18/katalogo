@@ -1,0 +1,43 @@
+$ct_card : '.ct_card';
+$cardheader-color: #9dcef1;
+
+#{$ct_card}{
+	margin-top: 2rem;
+	height: auto;
+	&__header {
+		background-color: $cardheader-color;
+		text-align: center;
+		.info-marca {
+			color: $purphe-link;
+			font-size: 1.28rem;
+		}
+		.info-modelo {
+			color: #304487;
+		}
+	}
+	&.selected {
+		height: 100%;
+		.ct_card__header {
+			background-color: $purphe-link;
+			.info-marca {
+				color: #fff;
+			}
+			.info-modelo {
+				color: #9dcef1;
+			}
+		}
+
+		.ct_caractsdata{
+			&__item {
+				&:nth-child(odd) {
+					background-color: #f5dcf3;
+				}
+			}
+		}
+		.ct_caractsdata {
+			display: block;
+		}
+	}
+	
+	
+}

@@ -1,0 +1,31 @@
+$pagination : '.ct_pagination';
+$color-linkpag : #6f6f6f;
+
+#{$pagination}{
+	margin-top: 3rem;
+	display: flex !important;
+    width: auto;
+    justify-content: center;
+    background: #fff;
+    padding: 1rem;
+	.page-item {
+		.page-link {
+			border-color: transparent;
+			color: $color-linkpag;
+			font-size: 1rem;
+			padding: .5rem .8rem;
+			&:hover {
+				border-radius: 5px;
+			}
+		}
+		&.active {
+			.page-link {
+				background-color: $primary-ct;
+				border-color: $primary-ct;
+				border-radius: 5px;
+				color: #fff;
+			}
+		}
+	}
+	
+}

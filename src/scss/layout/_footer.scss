@@ -1,0 +1,34 @@
+$footer : '.footer';
+
+#{$footer}{
+	font-family: 'Lato', sans-serif;
+	background-color: #1f346f;
+	color: #ffffff;	
+	&__pre {
+		padding: 2.063rem 0;
+	}
+	&__descripcion {
+		display: flex;
+		align-items: center;
+		p {
+			font-size: 1.5rem;
+			margin-bottom: 0;
+		}
+	}
+	&__final {
+		font-family: 'Lato', sans-serif;		
+		p {
+			font-size: 1.125rem;
+		}
+	}
+}
+
+.bg--lightblue {
+	background-color: #304487;
+	padding: 2.063rem 0;
+	p {
+		font-family: 'Lato', sans-serif;
+		font-size: 1.5rem;
+		color: #fff;
+	}
+}

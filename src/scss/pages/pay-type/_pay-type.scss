@@ -1,0 +1,160 @@
+$ct_paytype : '.ct_paytype';
+#{$ct_paytype}{
+
+	&__img {
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: {
+			// image: url('../img/phone/tipos/banners/taf.jpg');
+			repeat: no-repeat;
+			position: bottom right;
+			size: cover;
+		}
+		@include media-breakpoint-down(md) {
+			// background-position: center;
+			height: 220px;
+		}
+	}
+	&__description {
+		display: flex;
+		flex-direction: column;
+		color: #ffffff;
+		align-items: flex-start;
+		justify-content: center;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		.title {
+			color: #1f346f;
+			font-weight: normal;
+			margin-bottom: 1rem;
+			width: 100%;
+			background: #ffc300;
+			padding: .6rem 3rem;
+		}
+		.content {
+			padding: .6rem 3rem;
+		}
+		@include media-breakpoint-down(md) {
+			padding-top: 1.5rem;
+			padding-bottom: 1.5rem;
+		}
+	}
+}
+
+.type-bg {
+	&--orange {
+		background: rgba(255,151,107,1);
+		background: -moz-linear-gradient(left, rgba(255,151,107,1) 0%, rgba(247,122,68,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,151,107,1)), color-stop(100%, rgba(247,122,68,1)));
+		background: -webkit-linear-gradient(left, rgba(255,151,107,1) 0%, rgba(247,122,68,1) 100%);
+		background: -o-linear-gradient(left, rgba(255,151,107,1) 0%, rgba(247,122,68,1) 100%);
+		background: -ms-linear-gradient(left, rgba(255,151,107,1) 0%, rgba(247,122,68,1) 100%);
+		background: linear-gradient(to right, rgba(255,151,107,1) 0%, rgba(247,122,68,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff976b', endColorstr='#f77a44', GradientType=1 );
+		.ct_paytype__img {
+			background: {
+				image: url('../img/phone/tipos/banners/planes-banner.jpg');
+				position: top right;
+			}
+		}
+		
+	}
+	&--blue {
+		background: rgba(0,224,249,1);
+		background: -moz-linear-gradient(left, rgba(0,224,249,1) 0%, rgba(25,213,234,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,224,249,1)), color-stop(100%, rgba(25,213,234,1)));
+		background: -webkit-linear-gradient(left, rgba(0,224,249,1) 0%, rgba(25,213,234,1) 100%);
+		background: -o-linear-gradient(left, rgba(0,224,249,1) 0%, rgba(25,213,234,1) 100%);
+		background: -ms-linear-gradient(left, rgba(0,224,249,1) 0%, rgba(25,213,234,1) 100%);
+		background: linear-gradient(to right, rgba(0,224,249,1) 0%, rgba(25,213,234,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e0f9', endColorstr='#19d5ea', GradientType=1 );
+		.ct_paytype__img {
+			background: {
+				image: url('../img/phone/tipos/banners/contadobanner.jpg');
+				position: top center;
+			}
+		}
+	}
+	&--green {
+		background: rgba(126,191,13,1);
+		background: -moz-linear-gradient(left, rgba(126,191,13,1) 0%, rgba(87,134,0,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(126,191,13,1)), color-stop(100%, rgba(87,134,0,1)));
+		background: -webkit-linear-gradient(left, rgba(126,191,13,1) 0%, rgba(87,134,0,1) 100%);
+		background: -o-linear-gradient(left, rgba(126,191,13,1) 0%, rgba(87,134,0,1) 100%);
+		background: -ms-linear-gradient(left, rgba(126,191,13,1) 0%, rgba(87,134,0,1) 100%);
+		background: linear-gradient(to right, rgba(126,191,13,1) 0%, rgba(87,134,0,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ebf0d', endColorstr='#578600', GradientType=1 );
+		.title {
+			color: #7dc000;
+			background: #304487;
+		}
+		.ct_paytype__img {
+			background: {
+				image: url('../img/phone/tipos/banners/payjoybanner2.jpg');
+				repeat: no-repeat;
+				position: bottom center;
+				size: cover;
+			}
+			@include media-breakpoint-down(md) {
+				background-position: center;
+			}
+		}
+	}
+	&--ora2 {
+		background: rgba(255,163,3,1);
+		background: -moz-linear-gradient(left, rgba(255,163,3,1) 0%, rgba(234,130,3,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,163,3,1)), color-stop(100%, rgba(234,130,3,1)));
+		background: -webkit-linear-gradient(left, rgba(255,163,3,1) 0%, rgba(234,130,3,1) 100%);
+		background: -o-linear-gradient(left, rgba(255,163,3,1) 0%, rgba(234,130,3,1) 100%);
+		background: -ms-linear-gradient(left, rgba(255,163,3,1) 0%, rgba(234,130,3,1) 100%);
+		background: linear-gradient(to right, rgba(255,163,3,1) 0%, rgba(234,130,3,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa303', endColorstr='#ea8203', GradientType=1 );
+		.title {
+			color: #ffa103;
+			background: #304487;
+		}
+		.ct_paytype__img {
+			background: {
+				image: url('../img/phone/tipos/banners/efectivobanner.jpg');
+				repeat: no-repeat;
+				position: center;
+				size: cover;
+			}
+			@include media-breakpoint-down(md) {
+				background-position: center;
+			}
+		}
+	}
+}
+
+$ct_paycontent : '.ct_paycontent';
+
+#{$ct_paycontent}{
+	background: {
+		// image: url('../img/phone/phone-woman.jpg');
+		// repeat: no-repeat;
+		// position: bottom center;
+		// size: contain;
+	}
+	padding: 3rem 0 4rem;
+	.title {
+		color: #304487;
+		margin-bottom: 14px;
+	}
+	h4 {
+		color: #f56527;
+		margin-bottom: 12px;
+	}
+	p {
+		font-family: Lato,sans-serif;
+    	font-size: 1rem;
+	}
+	&__content {
+		border-top: 3px solid #f77a44;
+		border-bottom: 3px solid #f77a44;
+		padding-top: 2.5rem;
+		padding-bottom: 2.5rem;
+	}
+}

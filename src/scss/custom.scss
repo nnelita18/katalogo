@@ -1,1 +1,40 @@
-$body-bg: #f3f3f3;
+
+@import 'base/variables';
+
+
+
+@import 'layout/header';
+@import 'layout/navbar-menu.scss';
+
+
+@import 'components/menu-list';
+@import 'components/buttons';
+
+@import 'layout/footer';
+
+
+@import 'pages/home/promotions';
+@import 'pages/home/carousel';
+@import 'pages/home/tipos-pagos';
+@import 'pages/home/ofertas';
+@import 'pages/home/equipos-filter';
+@import 'pages/home/equipos-filter';
+@import 'pages/home/modal-promos';
+@import 'pages/home/modal-pagos';
+
+@import 'pages/catalogo/sidebar';
+@import 'pages/catalogo/content';
+@import 'pages/catalogo/single';
+@import 'pages/catalogo/pagination';
+
+@import 'pages/pay-type/pay-type';
+
+@import 'pages/comparador/phone-choose';
+@import 'pages/comparador/ct-card';
+@import 'pages/comparador/details';
+@import 'pages/comparador/modchoose-equipo';
+
+@import 'pages/promos/promos-page';
+@import 'pages/promos/banner-promos';
+
+@import 'base/breakpoints';
